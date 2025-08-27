@@ -1,0 +1,27 @@
+{
+  "name": "backend-model",
+  "version": "1.0.0",
+  "description": "Backend model and API for all the frontend librarues",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "Backend",
+    "express.js",
+    "node.js",
+    "API"
+  ],
+  "author": "Harshit Dugar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.2",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2"
+  }
+}
