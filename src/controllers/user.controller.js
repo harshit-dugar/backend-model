@@ -153,10 +153,10 @@ const updateAccountDetails = asyncHandler(async (req,res) => {
     },
     { new: true },
   ).select("-password -refreshToken");
-  
+
   return res.status(200)
     .json(new ApiResponse(
-      200,{userUpdated}
+      200,{user},"User Updates Successfully"
     ))
 })
 
@@ -208,5 +208,5 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
 });
 
 export { registerUser, loginUser, logoutUser, refreshAccessToken,
-  updatePassword, getCurrentUser
+  updatePassword, getCurrentUser, updateAccountDetails
 }; 
