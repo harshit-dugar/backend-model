@@ -1,11 +1,11 @@
 # Backend-Wrapper
 
-
 A modular Node.js + Express + MongoDB backend template with authentication and utilities.
 
 This boilerplate is designed to help contributors and developers quickly set up, extend, and maintain backend APIs.
 
 ## 📂 Project Structure
+
 ```
 src/
 ├── controllers/        # Route controllers (business logic)
@@ -35,14 +35,17 @@ src/
 ## 🛠️ Getting Started
 
 1. Clone the repo (Fork first)
+
 ```bash
 git clone https://github.com/your-username/backend-model.git
 ```
+
 ```bash
 cd backend-model
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
@@ -50,20 +53,20 @@ npm install
 3. Configure environment variables
 
 Copy the .env.example file to .env.local:
-```bash 
+
+```bash
 cp .env.local .env
 ```
 
 Open .env and fill in your secrets:
 
-
 ⚠️ Do not commit .env or real secrets. Only .env.local should be in Git.
 
 4. Run the server
+
 ```bash
 npm run dev
 ```
-
 
 The server will start on http://localhost:4000 (or the port you set).
 
