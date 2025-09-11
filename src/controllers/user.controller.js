@@ -152,7 +152,12 @@ const updateAccountDetails = asyncHandler(async (req,res) => {
       },
     },
     { new: true },
-  )
+  ).select("-password -refreshToken");
+  
+  return res.status(200)
+    .json(new ApiResponse(
+      200,{userUpdated}
+    ))
 })
 
 //Refreshing the expired access token
